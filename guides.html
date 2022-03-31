@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=devide-width, inital-scale=1.0">
+    <title>Arsaric's - Guides</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<section class="header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+               <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="games.html">Games</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="guides.html">Guides</a></li>
+                    <li><a href="websites.html">Websites</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+a
+<div class="text-box2">
+    <h1>GUIDES NOT DONE</h1>
+    <a href="index.html" class="hero-btn">BACK TO HOME</a>
+</div>
+</section>
+
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    src: url(fonts/coolvetica.otf);
+    font-family: coolvetica;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #000;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/banner.gif);
+    background-size: cover;
+    position: relative;
+    font-family: coolvetica;
+}
+@keyframes slide {
+    from {
+        opacity: 0;
+        transform: translateY(-500px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(-0px);;
+    }
+}
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes slide2 {
+    from {
+        opacity: 0;
+        transform: translateY(500px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(-0px);;
+    }
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    font-family: coolvetica;
+    animation: slide 1s;
+}
+nav img{
+    width: 100px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    color: rgb(255, 167, 204);
+    background: #ff0055;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    animation: fade 2s;
+}
+.text-box h1{
+    font-size: 90px;
+}
+
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff;
+    text-shadow: #000;
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    animation: slide2 1s;
+}
+.hero-btn:hover{
+    border: 1px solid #920066;
+    background: #920038;
+    transition: 2s;
+}
+
+nav .fa{
+    display: none;
+}
+
+@media(max-width: 700px){
+    .text-box h1{
+        font-size: 60px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: #001c2c;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: center;
+        z-index: 5;
+        transition: 1s;
+    }
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin :10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 30px;
+    }
+}
+
+.games{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    animation: fade 2s;
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+    animation: fade 2s;
+}
+
+p{
+    color: #000;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.games-col{
+    flex-basis: 31%;
+    background: #96d0ff;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px;
+}
+.games-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.4);
+}
+.text-box2{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    animation: fade 2s;
+}
+.text-box2 h1{
+    font-size: 90px;
+}
+
+.text-box2 p{
+    margin: 10px 0 10px;
+    font-size: 14px;
+    color: #fff;
+    text-shadow: #000;
+}
